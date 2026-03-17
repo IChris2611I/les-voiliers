@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À emporter — Restaurant Les Voiliers | Port Leucate</title>
+  <meta name="description" content="Commandez vos pizzas et moules frites à emporter au restaurant Les Voiliers à Port Leucate. Commande par téléphone : 04.68.70.39.52">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ══ NAVIGATION ══ -->
+  <nav class="nav scrolled" id="nav">
+    <a href="index.html" class="nav-logo">
+      <span class="nav-logo-titre">Les Voiliers</span>
+      <span class="nav-logo-sous">Port Leucate</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="la-carte.html">La carte</a></li>
+      <li><a href="a-emporter.html" class="active">À emporter</a></li>
+      <li><a href="evenements.html">Formules</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="tel:0468703952" class="nav-tel">04.68.70.39.52</a>
+    <button class="nav-burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ══ MENU MOBILE ══ -->
+  <div class="nav-mobile" id="navMobile">
+    <button class="nav-mobile-close" id="navClose">&times;</button>
+    <a href="index.html" onclick="closeNav()">Accueil</a>
+    <a href="la-carte.html" onclick="closeNav()">La carte</a>
+    <a href="a-emporter.html" onclick="closeNav()">À emporter</a>
+    <a href="evenements.html" onclick="closeNav()">Formules</a>
+    <a href="contact.html" onclick="closeNav()">Contact</a>
+    <a href="tel:0468703952" style="font-family:var(--font-titre); font-size:1.5rem; color:var(--marine); margin-top:1rem;">04.68.70.39.52</a>
+  </div>
+
+  <!-- ══ PAGE HERO ══ -->
+  <div class="page-hero">
+    <div class="page-hero-bg">
+      <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=1600&q=80&auto=format" alt="À emporter" loading="eager">
+    </div>
+    <div class="page-hero-content">
+      <span class="page-hero-eyebrow">Restaurant Les Voiliers</span>
+      <h1 class="page-hero-titre">À <em>emporter</em></h1>
+    </div>
+  </div>
+
+  <!-- INTRO COMMANDE -->
+  <section style="background: var(--marine); border-bottom: 1px solid rgba(245,240,232,0.1);">
+    <div style="max-width:var(--max-width); margin:0 auto; padding:2.2rem 2rem; display:flex; align-items:center; justify-content:space-between; gap:2rem; flex-wrap:wrap;">
+      <div>
+        <p style="font-size:0.65rem; letter-spacing:0.28em; text-transform:uppercase; color:rgba(245,240,232,0.5); margin-bottom:0.4rem;">Commandes uniquement par téléphone</p>
+        <p style="font-family:var(--font-titre); font-size:1.6rem; color:var(--creme);">Préparez votre commande,<br>nous vous accueillons avec plaisir.</p>
+      </div>
+      <a href="tel:0468703952" class="btn-primary" style="white-space:nowrap;">04.68.70.39.52</a>
+    </div>
+  </section>
+
+  <!-- ══ CONTENU ══ -->
+  <section class="section" style="padding-top: 5rem;">
+    <div class="container">
+
+      <!-- Pizzas -->
+      <div class="carte-categorie">
+        <span class="eyebrow">À emporter</span>
+        <h2 class="h2">Nos <em>pizzas</em></h2>
+        <hr class="carte-rule">
+        <div class="carte-items">
+          <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Margarita</div><div class="carte-item-desc">Sauce tomate, mozzarella, olives</div></div><div class="carte-item-prix">11,00 €</div></div>
+          <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Reine</div><div class="carte-item-desc">Sauce tomate, jambon, champignons, mozzarella</div></div><div class="carte-item-prix">13,00 €</div></div>
+          <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Sicilienne</div><div class="carte-item-desc">Sauce tomate, anchois, tomates fraîches, câpres, mozzarella, basilic</div></div><div class="carte-item-prix">13,00 €</div></div>
+          <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Calzone</div><div class="carte-item-desc">Sauce tomate, jambon, champignons, œuf, mozzarella</div></div><div class="carte-item-prix">13,00 €</div></div>
+          <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Chorizo</div><div class="carte-item-desc">Sauce tomate, chorizo, poivrons, mozzarella</div></div><div class="carte-item-prix">13,00 €</div></div>
+          <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Chèvre miel</div><div class="carte-item-desc">Crème fraîche, miel, chèvre, mozzarella</div></div><div class="carte-item-prix">14,00 €</div></div>
+          <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Trois fromages</div><div class="carte-item-desc">Sauce tomate, roquefort, chèvre, mozzarella</div></div><div class="carte-item-prix">14,00 €</div></div>
+          <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Kebab</div><div class="carte-item-desc">Sauce tomate, viande kebab, oignons, tomates fraîches, sauce kebab, mozzarella, coriandre</div></div><div class="carte-item-prix">14,00 €</div></div>
+          <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Végétarienne</div><div class="carte-item-desc">Légumes de saison : aubergines, poivrons, oignons, tomates, champignons, courgettes…</div></div><div class="carte-item-prix">14,00 €</div></div>
+          <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Indienne</div><div class="carte-item-desc">Crème fraîche, poulet, curry, courgettes, mozzarella</div></div><div class="carte-item-prix">14,00 €</div></div>
+          <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Cow-boy</div><div class="carte-item-desc">Sauce tomate, viande hachée, œuf, oignons, sauce Cow-Boy, mozzarella</div></div><div class="carte-item-prix">14,00 €</div></div>
+          <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Nordique</div><div class="carte-item-desc">Crème fraîche, saumon fumé, citron</div></div><div class="carte-item-prix">15,00 €</div></div>
+          <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">La Couronne</div><div class="carte-item-desc">Crème fraîche, chèvre, lardons, oignons, salade, noix, mozzarella</div></div><div class="carte-item-prix">15,00 €</div></div>
+          <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Vénitienne</div><div class="carte-item-desc">Sauce tomate, jambon, chorizo, tomates fraîches, champignons, olives noires, mozzarella, basilic</div></div><div class="carte-item-prix">15,00 €</div></div>
+          <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Parma</div><div class="carte-item-desc">Sauce tomate, mozzarella, jambon de Pays, roquette, parmesan, noix</div></div><div class="carte-item-prix">15,00 €</div></div>
+          <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Fruits de mer</div><div class="carte-item-desc">Sauce tomate, calamars, crevettes, moules, couteaux</div></div><div class="carte-item-prix">18,00 €</div></div>
+        </div>
+      </div>
+
+      <div style="height:1px; background: linear-gradient(to right, transparent, rgba(200,169,110,0.3), transparent); margin: 4rem 0;"></div>
+
+      <!-- Moules -->
+      <div class="carte-categorie">
+        <span class="eyebrow">À emporter</span>
+        <h2 class="h2">Moules <em>frites</em></h2>
+        <hr class="carte-rule">
+        <div class="carte-items">
+          <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Moules marinière</div></div><div class="carte-item-prix">15,00 €</div></div>
+          <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Moules aïoli</div></div><div class="carte-item-prix">16,00 €</div></div>
+          <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Moules à la crème</div></div><div class="carte-item-prix">16,00 €</div></div>
+          <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Moules roquefort</div></div><div class="carte-item-prix">16,00 €</div></div>
+          <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Moules à la Normande</div><div class="carte-item-desc">Crème fraîche, oignons, lardons, persil, vin blanc</div></div><div class="carte-item-prix">16,00 €</div></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="background:var(--marine); padding:4rem 2rem; text-align:center;">
+    <div class="container">
+      <span class="eyebrow eyebrow-light" style="display:block; text-align:center; margin-bottom:0.8rem;">Commander</span>
+      <h2 class="h2 h2-light" style="text-align:center; margin-bottom:0.6rem;">Passez votre <em>commande</em></h2>
+      <p style="font-size:0.88rem; font-weight:300; color:rgba(245,240,232,0.55); margin-bottom:2rem; max-width:380px; margin-left:auto; margin-right:auto; line-height:1.8;">
+        Les commandes se font uniquement par téléphone.<br>Nous préparons votre commande à l'avance.
+      </p>
+      <a href="tel:0468703952" class="btn-primary" style="font-size:0.95rem; padding:1rem 2.8rem;">04.68.70.39.52</a>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-titre">Les Voiliers</div>
+        <div class="footer-brand-sous">Restaurant · Bar · Glacier</div>
+        <p class="footer-brand-desc">Spécialistes des produits de la mer et de la Méditerranée, installés sur les quais du port de Leucate.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="la-carte.html">La carte</a></li>
+          <li><a href="a-emporter.html">À emporter</a></li>
+          <li><a href="evenements.html">Formules</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Adresse</h4>
+        <p>Quai Éric Tabarly<br>Port Leucate<br>11370</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p><a href="tel:0468703952">04.68.70.39.52</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Restaurant Les Voiliers — Port Leucate</p>
+      <div class="footer-bottom-links">
+        <a href="#">Mentions légales</a>
+        <a href="#">Confidentialité</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('burger').addEventListener('click', () => document.getElementById('navMobile').classList.add('open'));
+    document.getElementById('navClose').addEventListener('click', () => document.getElementById('navMobile').classList.remove('open'));
+    function closeNav() { document.getElementById('navMobile').classList.remove('open'); }
+  </script>
+</body>
+</html>

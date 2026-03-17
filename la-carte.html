@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La carte — Restaurant Les Voiliers | Port Leucate</title>
+  <meta name="description" content="La carte complète du restaurant Les Voiliers à Port Leucate : entrées, salades, poissons, viandes, pizzas, moules, desserts, glaces, crêpes.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ══ NAVIGATION ══ -->
+  <nav class="nav scrolled" id="nav">
+    <a href="index.html" class="nav-logo">
+      <span class="nav-logo-titre">Les Voiliers</span>
+      <span class="nav-logo-sous">Port Leucate</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="la-carte.html" class="active">La carte</a></li>
+      <li><a href="a-emporter.html">À emporter</a></li>
+      <li><a href="evenements.html">Formules</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="tel:0468703952" class="nav-tel">04.68.70.39.52</a>
+    <button class="nav-burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ══ MENU MOBILE ══ -->
+  <div class="nav-mobile" id="navMobile">
+    <button class="nav-mobile-close" id="navClose">&times;</button>
+    <a href="index.html" onclick="closeNav()">Accueil</a>
+    <a href="la-carte.html" onclick="closeNav()">La carte</a>
+    <a href="a-emporter.html" onclick="closeNav()">À emporter</a>
+    <a href="evenements.html" onclick="closeNav()">Formules</a>
+    <a href="contact.html" onclick="closeNav()">Contact</a>
+    <a href="tel:0468703952" style="font-family:var(--font-titre); font-size:1.5rem; color:var(--marine); margin-top:1rem;">04.68.70.39.52</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-bg">
+      <img src="https://images.unsplash.com/photo-1534080564583-6be75777b70a?w=1600&q=80&auto=format" alt="Notre carte" loading="eager">
+    </div>
+    <div class="page-hero-content">
+      <span class="page-hero-eyebrow">Restaurant Les Voiliers</span>
+      <h1 class="page-hero-titre">La <em>carte</em></h1>
+    </div>
+  </div>
+
+  <!-- CARTE -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Onglets -->
+      <div class="carte-nav">
+        <button class="carte-tab active" onclick="showTab('entrees', this)">Entrées &amp; Salades</button>
+        <button class="carte-tab" onclick="showTab('plats', this)">Plats</button>
+        <button class="carte-tab" onclick="showTab('desserts', this)">Desserts &amp; Glaces</button>
+        <button class="carte-tab" onclick="showTab('crepes', this)">Crêpes &amp; Gaufres</button>
+        <button class="carte-tab" onclick="showTab('enfant', this)">Menu Enfant</button>
+      </div>
+
+      <!-- ── ENTRÉES & SALADES ── -->
+      <div class="carte-section active" id="tab-entrees">
+
+        <div class="carte-categorie">
+          <h2 class="carte-categorie-titre">Les salades composées</h2>
+          <hr class="carte-rule">
+          <div class="carte-items">
+            <div class="carte-item">
+              <div class="carte-item-gauche">
+                <div class="carte-item-nom">Chèvre</div>
+                <div class="carte-item-desc">Salade, tomates, croûtons, chèvre chaud, noix, lardons</div>
+              </div>
+              <div class="carte-item-prix">12,90 €</div>
+            </div>
+            <div class="carte-item">
+              <div class="carte-item-gauche">
+                <div class="carte-item-nom">La Fraîcheur <span style="font-size:0.72rem; color:var(--gris);">(suivant saison)</span></div>
+                <div class="carte-item-desc">Salade, tomates, œuf, saumon fumé, crème ciboulette, crevettes, pamplemousse</div>
+              </div>
+              <div class="carte-item-prix">15,90 €</div>
+            </div>
+            <div class="carte-item">
+              <div class="carte-item-gauche">
+                <div class="carte-item-nom">Catalane</div>
+                <div class="carte-item-desc">Salade, tomates, oignons, anchois, jambon de pays, poivrons</div>
+              </div>
+              <div class="carte-item-prix">13,90 €</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carte-categorie">
+          <h2 class="carte-categorie-titre">Les entrées</h2>
+          <hr class="carte-rule">
+          <div class="carte-items">
+            <div class="carte-item">
+              <div class="carte-item-gauche">
+                <div class="carte-item-nom">6 Huîtres de Leucate</div>
+              </div>
+              <div class="carte-item-prix">12,00 €</div>
+            </div>
+            <div class="carte-item">
+              <div class="carte-item-gauche">
+                <div class="carte-item-nom">12 Huîtres de Leucate</div>
+              </div>
+              <div class="carte-item-prix">22,00 €</div>
+            </div>
+            <div class="carte-item">
+              <div class="carte-item-gauche">
+                <div class="carte-item-nom">Calamars à la Romaine</div>
+              </div>
+              <div class="carte-item-prix">9,90 €</div>
+            </div>
+            <div class="carte-item">
+              <div class="carte-item-gauche">
+                <div class="carte-item-nom">Friture d'éperlans</div>
+              </div>
+              <div class="carte-item-prix">9,50 €</div>
+            </div>
+            <div class="carte-item">
+              <div class="carte-item-gauche">
+                <div class="carte-item-nom">Assiette de 8 couteaux</div>
+              </div>
+              <div class="carte-item-prix">9,50 €</div>
+            </div>
+            <div class="carte-item">
+              <div class="carte-item-gauche">
+                <div class="carte-item-nom">Assiette de 12 bulots</div>
+              </div>
+              <div class="carte-item-prix">12,90 €</div>
+            </div>
+            <div class="carte-item">
+              <div class="carte-item-gauche">
+                <div class="carte-item-nom">Pan con tomate</div>
+                <div class="carte-item-desc">Jambon de Pays, tomates, ail, pain grillé</div>
+              </div>
+              <div class="carte-item-prix">9,00 €</div>
+            </div>
+            <div class="carte-item">
+              <div class="carte-item-gauche">
+                <div class="carte-item-nom">Assiette Tapas de la mer</div>
+                <div class="carte-item-desc">Couteaux, calamars à la romaine, friture d'éperlans, bulots</div>
+              </div>
+              <div class="carte-item-prix">14,90 €</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── PLATS ── -->
+      <div class="carte-section" id="tab-plats">
+
+        <div class="carte-categorie">
+          <h2 class="carte-categorie-titre">Côté mer</h2>
+          <hr class="carte-rule">
+          <div class="carte-items">
+            <div class="carte-item">
+              <div class="carte-item-gauche">
+                <div class="carte-item-nom">Seiches en persillade</div>
+              </div>
+              <div class="carte-item-prix">22,00 €</div>
+            </div>
+            <div class="carte-item">
+              <div class="carte-item-gauche">
+                <div class="carte-item-nom">Cabillaud à l'aïoli</div>
+              </div>
+              <div class="carte-item-prix">17,90 €</div>
+            </div>
+            <div class="carte-item">
+              <div class="carte-item-gauche">
+                <div class="carte-item-nom">Loup de Mer frais entier</div>
+              </div>
+              <div class="carte-item-prix">22,00 €</div>
+            </div>
+            <div class="carte-item">
+              <div class="carte-item-gauche">
+                <div class="carte-item-nom">La Grande Plancha</div>
+                <div class="carte-item-desc">Seiche, gambas, couteaux, calamars, moules</div>
+              </div>
+              <div class="carte-item-prix">27,90 €</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carte-categorie">
+          <h2 class="carte-categorie-titre">Moules frites</h2>
+          <hr class="carte-rule">
+          <div class="carte-items">
+            <div class="carte-item">
+              <div class="carte-item-gauche"><div class="carte-item-nom">Moules marinière</div></div>
+              <div class="carte-item-prix">15,00 €</div>
+            </div>
+            <div class="carte-item">
+              <div class="carte-item-gauche"><div class="carte-item-nom">Moules aïoli</div></div>
+              <div class="carte-item-prix">16,00 €</div>
+            </div>
+            <div class="carte-item">
+              <div class="carte-item-gauche"><div class="carte-item-nom">Moules à la crème</div></div>
+              <div class="carte-item-prix">16,00 €</div>
+            </div>
+            <div class="carte-item">
+              <div class="carte-item-gauche"><div class="carte-item-nom">Moules roquefort</div></div>
+              <div class="carte-item-prix">16,00 €</div>
+            </div>
+            <div class="carte-item">
+              <div class="carte-item-gauche">
+                <div class="carte-item-nom">Moules à la Normande</div>
+                <div class="carte-item-desc">Crème fraîche, oignons, lardons, persil, vin blanc</div>
+              </div>
+              <div class="carte-item-prix">16,00 €</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carte-categorie">
+          <h2 class="carte-categorie-titre">Côté terre</h2>
+          <hr class="carte-rule">
+          <div class="carte-items">
+            <div class="carte-item">
+              <div class="carte-item-gauche"><div class="carte-item-nom">Escalope de poulet Normande</div></div>
+              <div class="carte-item-prix">16,50 €</div>
+            </div>
+            <div class="carte-item">
+              <div class="carte-item-gauche">
+                <div class="carte-item-nom">Entrecôte (300g environ)</div>
+              </div>
+              <div class="carte-item-prix">24,00 €</div>
+            </div>
+            <div class="carte-item">
+              <div class="carte-item-gauche">
+                <div class="carte-item-nom">Morceau du Boucher <span style="font-size:0.72rem; color:var(--gris);">(selon arrivage)</span></div>
+                <div class="carte-item-desc">Bavette, onglet, araignée, cœur de rumsteak…</div>
+              </div>
+              <div class="carte-item-prix">17,50 €</div>
+            </div>
+            <div class="carte-item">
+              <div class="carte-item-gauche"><div class="carte-item-nom">Carpaccio de bœuf et Parmesan</div></div>
+              <div class="carte-item-prix">15,90 €</div>
+            </div>
+          </div>
+          <p style="font-size:0.78rem; color:var(--gris); margin-top:1.5rem;">Nos sauces (poivre, roquefort, échalote, Banyuls) : <span style="color:var(--or)">+1,50 €</span></p>
+        </div>
+
+        <div class="carte-categorie">
+          <h2 class="carte-categorie-titre">Les pizzas</h2>
+          <hr class="carte-rule">
+          <div class="carte-items">
+            <div class="carte-item">
+              <div class="carte-item-gauche">
+                <div class="carte-item-nom">Margarita</div>
+                <div class="carte-item-desc">Sauce tomate, mozzarella, olives</div>
+              </div>
+              <div class="carte-item-prix">11,00 €</div>
+            </div>
+            <div class="carte-item">
+              <div class="carte-item-gauche">
+                <div class="carte-item-nom">Reine</div>
+                <div class="carte-item-desc">Sauce tomate, jambon, champignons, mozzarella</div>
+              </div>
+              <div class="carte-item-prix">13,00 €</div>
+            </div>
+            <div class="carte-item">
+              <div class="carte-item-gauche">
+                <div class="carte-item-nom">Sicilienne</div>
+                <div class="carte-item-desc">Sauce tomate, anchois, tomates fraîches, câpres, mozzarella, basilic</div>
+              </div>
+              <div class="carte-item-prix">13,00 €</div>
+            </div>
+            <div class="carte-item">
+              <div class="carte-item-gauche">
+                <div class="carte-item-nom">Calzone</div>
+                <div class="carte-item-desc">Sauce tomate, jambon, champignons, œuf, mozzarella</div>
+              </div>
+              <div class="carte-item-prix">13,00 €</div>
+            </div>
+            <div class="carte-item">
+              <div class="carte-item-gauche">
+                <div class="carte-item-nom">Chorizo</div>
+                <div class="carte-item-desc">Sauce tomate, chorizo, poivrons, mozzarella</div>
+              </div>
+              <div class="carte-item-prix">13,00 €</div>
+            </div>
+            <div class="carte-item">
+              <div class="carte-item-gauche">
+                <div class="carte-item-nom">Chèvre miel</div>
+                <div class="carte-item-desc">Crème fraîche, miel, chèvre, mozzarella</div>
+              </div>
+              <div class="carte-item-prix">14,00 €</div>
+            </div>
+            <div class="carte-item">
+              <div class="carte-item-gauche">
+                <div class="carte-item-nom">Trois fromages</div>
+                <div class="carte-item-desc">Sauce tomate, roquefort, chèvre, mozzarella</div>
+              </div>
+              <div class="carte-item-prix">14,00 €</div>
+            </div>
+            <div class="carte-item">
+              <div class="carte-item-gauche">
+                <div class="carte-item-nom">Kebab</div>
+                <div class="carte-item-desc">Sauce tomate, viande kebab, oignons, tomates fraîches, sauce kebab, mozzarella, coriandre</div>
+              </div>
+              <div class="carte-item-prix">14,00 €</div>
+            </div>
+            <div class="carte-item">
+              <div class="carte-item-gauche">
+                <div class="carte-item-nom">Végétarienne</div>
+                <div class="carte-item-desc">Légumes de saison : aubergines, poivrons, oignons, tomates, champignons, courgettes…</div>
+              </div>
+              <div class="carte-item-prix">14,00 €</div>
+            </div>
+            <div class="carte-item">
+              <div class="carte-item-gauche">
+                <div class="carte-item-nom">Indienne</div>
+                <div class="carte-item-desc">Crème fraîche, poulet, curry, courgettes, mozzarella</div>
+              </div>
+              <div class="carte-item-prix">14,00 €</div>
+            </div>
+            <div class="carte-item">
+              <div class="carte-item-gauche">
+                <div class="carte-item-nom">Cow-boy</div>
+                <div class="carte-item-desc">Sauce tomate, viande hachée, œuf, oignons, sauce Cow-Boy, mozzarella</div>
+              </div>
+              <div class="carte-item-prix">14,00 €</div>
+            </div>
+            <div class="carte-item">
+              <div class="carte-item-gauche">
+                <div class="carte-item-nom">Nordique</div>
+                <div class="carte-item-desc">Crème fraîche, saumon fumé, citron</div>
+              </div>
+              <div class="carte-item-prix">15,00 €</div>
+            </div>
+            <div class="carte-item">
+              <div class="carte-item-gauche">
+                <div class="carte-item-nom">La Couronne</div>
+                <div class="carte-item-desc">Crème fraîche, chèvre, lardons, oignons, salade, noix, mozzarella</div>
+              </div>
+              <div class="carte-item-prix">15,00 €</div>
+            </div>
+            <div class="carte-item">
+              <div class="carte-item-gauche">
+                <div class="carte-item-nom">Vénitienne</div>
+                <div class="carte-item-desc">Sauce tomate, jambon, chorizo, tomates fraîches, champignons, olives noires, mozzarella, basilic</div>
+              </div>
+              <div class="carte-item-prix">15,00 €</div>
+            </div>
+            <div class="carte-item">
+              <div class="carte-item-gauche">
+                <div class="carte-item-nom">Parma</div>
+                <div class="carte-item-desc">Sauce tomate, mozzarella, jambon de Pays, roquette, parmesan, noix</div>
+              </div>
+              <div class="carte-item-prix">15,00 €</div>
+            </div>
+            <div class="carte-item">
+              <div class="carte-item-gauche">
+                <div class="carte-item-nom">Fruits de mer</div>
+                <div class="carte-item-desc">Sauce tomate, calamars, crevettes, moules, couteaux</div>
+              </div>
+              <div class="carte-item-prix">18,00 €</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── DESSERTS & GLACES ── -->
+      <div class="carte-section" id="tab-desserts">
+
+        <div class="carte-categorie">
+          <h2 class="carte-categorie-titre">Les desserts</h2>
+          <hr class="carte-rule">
+          <div class="carte-items">
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Assiette de fromage</div></div><div class="carte-item-prix">8,00 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Tarte Tatin</div></div><div class="carte-item-prix">8,00 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Nougat glacé</div></div><div class="carte-item-prix">7,00 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Profiteroles</div></div><div class="carte-item-prix">8,00 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Omelette Norvégienne</div></div><div class="carte-item-prix">8,00 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Soufflé au Grand Marnier</div></div><div class="carte-item-prix">8,00 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Café gourmand</div></div><div class="carte-item-prix">8,00 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Noisette gourmand</div></div><div class="carte-item-prix">8,00 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Thé gourmand</div></div><div class="carte-item-prix">8,00 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Fondant au chocolat</div><div class="carte-item-desc">1 boule de glace, chantilly</div></div><div class="carte-item-prix">8,00 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Tarte fine aux pommes</div><div class="carte-item-desc">1 boule de glace, chantilly</div></div><div class="carte-item-prix">8,00 €</div></div>
+          </div>
+        </div>
+
+        <div class="carte-categorie">
+          <h2 class="carte-categorie-titre">Les coupes glacées</h2>
+          <hr class="carte-rule">
+          <div class="carte-items">
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Dame blanche</div><div class="carte-item-desc">Glace vanille, chocolat chaud, chantilly</div></div><div class="carte-item-prix">8,70 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Café liégeois</div><div class="carte-item-desc">Glace vanille et café, sauce café, chantilly</div></div><div class="carte-item-prix">8,70 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Chocolat liégeois</div><div class="carte-item-desc">Glace vanille et chocolat, chocolat chaud, chantilly</div></div><div class="carte-item-prix">8,70 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Ananas Melba</div><div class="carte-item-desc">Glace vanille et ananas, fruit ananas, sauce fruits rouges, chantilly</div></div><div class="carte-item-prix">9,00 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Pêche Melba</div><div class="carte-item-desc">Glace vanille et sorbet pêche, fruit pêche, sauce fruits rouges, chantilly</div></div><div class="carte-item-prix">9,00 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Poire Belle-Hélène</div><div class="carte-item-desc">Glace vanille, fruit poire, sauce chocolat, chantilly</div></div><div class="carte-item-prix">9,00 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Coupe Doudou</div><div class="carte-item-desc">Glace noix-de-coco et chocolat, sauce chocolat, chantilly</div></div><div class="carte-item-prix">9,00 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Caramélita</div><div class="carte-item-desc">Glace caramel et vanille, sauce caramel, chantilly</div></div><div class="carte-item-prix">9,00 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Coupe soleil</div><div class="carte-item-desc">Glace abricot, pêche de vigne, mangue, chantilly</div></div><div class="carte-item-prix">9,00 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Les bois</div><div class="carte-item-desc">Glace cassis, framboise, fraise, sauce fruits rouges, chantilly</div></div><div class="carte-item-prix">9,00 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Catalane</div><div class="carte-item-desc">Glace touron, chocolat blanc, vanille, sauce caramel, chantilly</div></div><div class="carte-item-prix">9,00 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">After eight</div><div class="carte-item-desc">Glace menthe-chocolat, vanille, sauce chocolat, chantilly</div></div><div class="carte-item-prix">9,00 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Negresco</div><div class="carte-item-desc">Glace chocolat, café, caramel, sauce chocolat, chantilly</div></div><div class="carte-item-prix">9,00 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Fondant des Îles</div><div class="carte-item-desc">Glace vanille, mangue, rhum-raisin, rhum, sauce exotique, chantilly</div></div><div class="carte-item-prix">9,90 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Banana Split</div><div class="carte-item-desc">Glace vanille, fraise, chocolat, fruit banane, sauce chocolat, chantilly</div></div><div class="carte-item-prix">9,90 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Colonel</div><div class="carte-item-desc">Sorbet citron, vodka</div></div><div class="carte-item-prix">9,90 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Iceberg</div><div class="carte-item-desc">Glace menthe-chocolat, get 27, chocolat chaud, chantilly</div></div><div class="carte-item-prix">9,90 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Exotique</div><div class="carte-item-desc">Glace mangue, ananas, pêche de vigne, fruit ananas, rhum, chantilly</div></div><div class="carte-item-prix">9,90 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Malibu Surfboard</div><div class="carte-item-desc">Glace vanille, noix de coco et mangue, malibu, chantilly</div></div><div class="carte-item-prix">9,90 €</div></div>
+          </div>
+        </div>
+
+        <div class="carte-cols" style="margin-top:3rem;">
+          <div class="carte-categorie">
+            <h2 class="carte-categorie-titre">Crèmes glacées</h2>
+            <p style="font-size:0.82rem; color:var(--gris); margin-bottom:1.5rem; line-height:1.8;">
+              Café · Caramel · Chocolat · Chocolat blanc · Fraise · Pistache<br>
+              Rhum-raisin · Touron · Vanille · Noix de coco · Menthe-chocolat
+            </p>
+            <div class="carte-items">
+              <div class="carte-item"><div class="carte-item-nom">Coupe 1 boule</div><div class="carte-item-prix">2,40 €</div></div>
+              <div class="carte-item"><div class="carte-item-nom">Coupe 2 boules</div><div class="carte-item-prix">4,40 €</div></div>
+              <div class="carte-item"><div class="carte-item-nom">Coupe 3 boules</div><div class="carte-item-prix">6,20 €</div></div>
+              <div class="carte-item"><div class="carte-item-nom">Coupe chantilly</div><div class="carte-item-prix">4,00 €</div></div>
+            </div>
+            <p style="font-size:0.78rem; color:var(--gris); margin-top:1rem;">Supplément chantilly : <span style="color:var(--or)">+2,20 €</span> &nbsp;|&nbsp; Chocolat chaud : <span style="color:var(--or)">+2,00 €</span></p>
+          </div>
+          <div class="carte-categorie">
+            <h2 class="carte-categorie-titre">Sorbets</h2>
+            <p style="font-size:0.82rem; color:var(--gris); margin-bottom:1.5rem; line-height:1.8;">
+              Cassis · Citron · Framboise · Mangue<br>
+              Pêche de vigne · Ananas · Abricot
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── CRÊPES & GAUFRES ── -->
+      <div class="carte-section" id="tab-crepes">
+
+        <div class="carte-categorie">
+          <h2 class="carte-categorie-titre">Les crêpes maison</h2>
+          <hr class="carte-rule">
+          <div class="carte-items">
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Sucre</div></div><div class="carte-item-prix">3,60 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Beurre</div></div><div class="carte-item-prix">3,90 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Citron</div></div><div class="carte-item-prix">4,40 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Confiture</div></div><div class="carte-item-prix">4,40 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Miel</div></div><div class="carte-item-prix">4,80 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Chocolat</div></div><div class="carte-item-prix">4,80 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Chantilly</div></div><div class="carte-item-prix">4,80 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Nutella</div></div><div class="carte-item-prix">4,80 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Compote de pomme</div></div><div class="carte-item-prix">4,80 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Crème de marron</div></div><div class="carte-item-prix">5,40 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Crêpe sucrée + 1 boule de glace</div></div><div class="carte-item-prix">5,50 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Nutella chantilly / chocolat chantilly</div></div><div class="carte-item-prix">6,50 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Grand Marnier</div></div><div class="carte-item-prix">7,50 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Martiniquaise</div><div class="carte-item-desc">Banane, chocolat chaud, chantilly</div></div><div class="carte-item-prix">8,00 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Melba</div><div class="carte-item-desc">Glace vanille, fruit pêche, chocolat chaud, chantilly</div></div><div class="carte-item-prix">8,00 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Ardéchoise</div><div class="carte-item-desc">Glace vanille, crème de marron, chantilly</div></div><div class="carte-item-prix">8,00 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Belle Hélène</div><div class="carte-item-desc">Glace vanille, fruit poire, chocolat chaud, chantilly</div></div><div class="carte-item-prix">8,50 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Méditerranée</div><div class="carte-item-desc">Sorbet de pêche, fruit de pêche, rhum, chantilly</div></div><div class="carte-item-prix">8,50 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Exotique</div><div class="carte-item-desc">Glace rhum-raisin, fruit ananas, rhum, chantilly</div></div><div class="carte-item-prix">8,50 €</div></div>
+          </div>
+        </div>
+
+        <div class="carte-categorie">
+          <h2 class="carte-categorie-titre">Gaufres</h2>
+          <hr class="carte-rule">
+          <div class="carte-items">
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Nature</div></div><div class="carte-item-prix">3,90 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Sucre</div></div><div class="carte-item-prix">4,30 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Chantilly</div></div><div class="carte-item-prix">5,80 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Nutella, chocolat ou crème de marron</div></div><div class="carte-item-prix">5,50 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Nutella chantilly / chocolat chantilly</div></div><div class="carte-item-prix">6,50 €</div></div>
+            <div class="carte-item"><div class="carte-item-gauche"><div class="carte-item-nom">Crème de marron chantilly</div></div><div class="carte-item-prix">6,50 €</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── MENU ENFANT ── -->
+      <div class="carte-section" id="tab-enfant">
+        <div class="carte-categorie" style="max-width:600px; margin:0 auto; text-align:center;">
+          <h2 class="carte-categorie-titre" style="text-align:center;">Menu enfant</h2>
+          <p style="font-size:0.75rem; letter-spacing:0.2em; color:var(--gris); text-transform:uppercase; margin-bottom:2rem;">Moins de 10 ans</p>
+          <hr class="carte-rule">
+
+          <div style="background:var(--noir-3); border:1px solid rgba(200,169,110,0.15); padding:3rem 2.5rem; margin-top:2rem;">
+            <p style="font-size:0.82rem; color:var(--gris); margin-bottom:2rem;">Au choix :</p>
+            <div style="font-family:var(--font-titre); font-size:1.3rem; color:var(--blanc); margin-bottom:0.7rem;">Steak haché</div>
+            <div style="font-family:var(--font-titre); font-size:1.3rem; color:var(--blanc); margin-bottom:0.7rem;">Nuggets de poulet</div>
+            <div style="font-family:var(--font-titre); font-size:1.3rem; color:var(--blanc); margin-bottom:0.7rem;">Nuggets de poisson</div>
+            <div style="font-family:var(--font-titre); font-size:1.3rem; color:var(--blanc); margin-bottom:2rem;">Pizzeta</div>
+            <hr class="carte-rule">
+            <p style="font-size:0.82rem; color:var(--gris); margin:1.5rem 0;">
+              + Verre de coca, sirop à l'eau ou jus de fruits<br>
+              + Glace 1 boule au choix
+            </p>
+            <hr class="carte-rule">
+            <div style="font-family:var(--font-titre); font-size:2.2rem; color:var(--or); margin-top:1.5rem;">8,90 €</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-titre">Les Voiliers</div>
+        <div class="footer-brand-sous">Restaurant · Bar · Glacier</div>
+        <p class="footer-brand-desc">Spécialistes des produits de la mer et de la Méditerranée, installés sur les quais du port de Leucate.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="la-carte.html">La carte</a></li>
+          <li><a href="a-emporter.html">À emporter</a></li>
+          <li><a href="evenements.html">Formules</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Adresse</h4>
+        <p>Quai Éric Tabarly<br>Port Leucate<br>11370</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p><a href="tel:0468703952">04.68.70.39.52</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Restaurant Les Voiliers — Port Leucate</p>
+      <div class="footer-bottom-links">
+        <a href="#">Mentions légales</a>
+        <a href="#">Confidentialité</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Nav scroll
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 60) nav.classList.add('scrolled');
+      else nav.classList.add('scrolled'); // always scrolled on inner pages
+    });
+
+    // Burger
+    document.getElementById('burger').addEventListener('click', () => document.getElementById('navMobile').classList.add('open'));
+    document.getElementById('navClose').addEventListener('click', () => document.getElementById('navMobile').classList.remove('open'));
+    function closeNav() { document.getElementById('navMobile').classList.remove('open'); }
+
+    // Tabs
+    function showTab(id, btn) {
+      document.querySelectorAll('.carte-section').forEach(s => s.classList.remove('active'));
+      document.querySelectorAll('.carte-tab').forEach(t => t.classList.remove('active'));
+      document.getElementById('tab-' + id).classList.add('active');
+      btn.classList.add('active');
+    }
+  </script>
+</body>
+</html>

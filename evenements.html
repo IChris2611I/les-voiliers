@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formules & Événements — Restaurant Les Voiliers | Port Leucate</title>
+  <meta name="description" content="Formules déjeuner et menus du jour au restaurant Les Voiliers à Port Leucate. Du lundi au vendredi midi. Entrée+Plat à 13,50€, formule complète à 17€.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ══ NAVIGATION ══ -->
+  <nav class="nav scrolled" id="nav">
+    <a href="index.html" class="nav-logo">
+      <span class="nav-logo-titre">Les Voiliers</span>
+      <span class="nav-logo-sous">Port Leucate</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="la-carte.html">La carte</a></li>
+      <li><a href="a-emporter.html">À emporter</a></li>
+      <li><a href="evenements.html" class="active">Formules</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="tel:0468703952" class="nav-tel">04.68.70.39.52</a>
+    <button class="nav-burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ══ MENU MOBILE ══ -->
+  <div class="nav-mobile" id="navMobile">
+    <button class="nav-mobile-close" id="navClose">&times;</button>
+    <a href="index.html" onclick="closeNav()">Accueil</a>
+    <a href="la-carte.html" onclick="closeNav()">La carte</a>
+    <a href="a-emporter.html" onclick="closeNav()">À emporter</a>
+    <a href="evenements.html" onclick="closeNav()">Formules</a>
+    <a href="contact.html" onclick="closeNav()">Contact</a>
+    <a href="tel:0468703952" style="font-family:var(--font-titre); font-size:1.5rem; color:var(--marine); margin-top:1rem;">04.68.70.39.52</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-bg">
+      <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1600&q=80&auto=format" alt="Formules" loading="eager">
+    </div>
+    <div class="page-hero-content">
+      <span class="page-hero-eyebrow">Restaurant Les Voiliers</span>
+      <h1 class="page-hero-titre">Formules &amp; <em>menus</em></h1>
+    </div>
+  </div>
+
+  <!-- ARDOISE -->
+  <section class="section section-alt">
+    <div class="container">
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center;">
+        <div class="reveal">
+          <span class="eyebrow">Chaque jour</span>
+          <h2 class="h2">L'ardoise des <em>Voiliers</em></h2>
+          <hr class="rule">
+          <p class="lead">Découvrez sur place l'incontournable ardoise des Voiliers pour découvrir les produits du moment — côté terre et côté mer !</p>
+          <p class="lead" style="margin-top:1rem;">Notre cuisine valorise les arrivages frais et les saisons. Chaque jour, une ardoise de suggestions qui change au fil des arrivées du marché et du port.</p>
+          <div style="background:rgba(26,46,68,0.06); border-left:3px solid var(--marine); padding:1.2rem 1.5rem; margin-top:2rem;">
+            <p style="font-size:0.88rem; font-weight:300; color:var(--texte-2); line-height:1.8; font-style:italic;">« Au plaisir de vous accueillir. La direction. »</p>
+          </div>
+        </div>
+        <div class="reveal" style="background:var(--marine); padding:3rem 2.5rem;">
+          <span class="eyebrow eyebrow-light">Disponible</span>
+          <p style="font-family:var(--font-titre); font-size:1.9rem; font-weight:400; color:var(--creme); margin-bottom:1.2rem; line-height:1.2;">Du lundi au vendredi,<br><em>tous les midis</em></p>
+          <hr class="rule rule-light">
+          <p style="font-size:0.88rem; font-weight:300; color:rgba(245,240,232,0.6); margin-top:1.2rem; line-height:1.8;">Hors week-end et jours fériés.<br>Service du déjeuner de 12h00 à 14h00.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULES -->
+  <section class="section">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:3rem;" class="reveal">
+        <span class="eyebrow" style="display:block; text-align:center;">Nos formules</span>
+        <h2 class="h2" style="text-align:center;">Menus <em>déjeuner</em></h2>
+        <p style="font-size:0.85rem; font-weight:300; color:var(--texte-3); margin-top:0.4rem;">Du lundi au vendredi — hors week-end et jours fériés</p>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--lin); max-width:840px; margin:0 auto;" class="reveal">
+        <div style="background:var(--blanc); padding:2.8rem 2rem; text-align:center; transition:background 0.3s;" onmouseover="this.style.background='var(--creme)'" onmouseout="this.style.background='var(--blanc)'">
+          <span class="eyebrow" style="display:block; text-align:center; margin-bottom:1.2rem;">Formule</span>
+          <p style="font-family:var(--font-titre); font-size:1.15rem; color:var(--marine); line-height:1.5; margin-bottom:1.5rem;">Entrée + Plat<br>ou Plat + Dessert</p>
+          <hr style="border:none; border-top:1px solid var(--lin); margin-bottom:1.5rem;">
+          <p style="font-family:var(--font-titre); font-size:2.6rem; font-style:italic; color:var(--terre);">13,50 €</p>
+        </div>
+        <div style="background:var(--marine); padding:2.8rem 2rem; text-align:center; position:relative;">
+          <div style="position:absolute; top:0; left:50%; transform:translateX(-50%) translateY(-50%); background:var(--terre); color:#fff; font-size:0.6rem; font-weight:500; letter-spacing:0.15em; text-transform:uppercase; padding:0.25rem 0.9rem; white-space:nowrap;">Recommandé</div>
+          <span class="eyebrow eyebrow-light" style="display:block; text-align:center; margin-bottom:1.2rem;">Tout inclus</span>
+          <p style="font-family:var(--font-titre); font-size:1.15rem; color:var(--creme); line-height:1.8; margin-bottom:1.5rem;">Entrée + Plat<br>+ Dessert + Boisson</p>
+          <hr style="border:none; border-top:1px solid rgba(245,240,232,0.15); margin-bottom:1.5rem;">
+          <p style="font-family:var(--font-titre); font-size:2.6rem; font-style:italic; color:var(--creme);">17,00 €</p>
+        </div>
+        <div style="background:var(--blanc); padding:2.8rem 2rem; text-align:center; transition:background 0.3s;" onmouseover="this.style.background='var(--creme)'" onmouseout="this.style.background='var(--blanc)'">
+          <span class="eyebrow" style="display:block; text-align:center; margin-bottom:1.2rem;">Rapide</span>
+          <p style="font-family:var(--font-titre); font-size:1.15rem; color:var(--marine); line-height:1.5; margin-bottom:0.6rem;">Plat du jour</p>
+          <p style="font-size:0.82rem; font-weight:300; color:var(--texte-3); margin-bottom:1.5rem; line-height:1.7;">L'ardoise change chaque jour</p>
+          <hr style="border:none; border-top:1px solid var(--lin); margin-bottom:1.5rem;">
+          <p style="font-family:var(--font-titre); font-size:2.6rem; font-style:italic; color:var(--terre);">12,00 €</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GROUPES -->
+  <section class="section section-alt">
+    <div class="container">
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center;">
+        <div class="reveal">
+          <span class="eyebrow">Événements</span>
+          <h2 class="h2">Vos <em>événements</em><br>en groupe</h2>
+          <hr class="rule">
+          <p class="lead">Les Voiliers accueillent vos événements privés, repas d'affaires, anniversaires et réunions familiales jusqu'à 50 personnes dans notre salle climatisée avec vue sur le port.</p>
+          <div class="commodites" style="margin-top:1.5rem;">
+            <div class="commodite-item"><div class="commodite-dot"></div><span>Jusqu'à 50 couverts</span></div>
+            <div class="commodite-item"><div class="commodite-dot"></div><span>Vue panoramique sur le port</span></div>
+            <div class="commodite-item"><div class="commodite-dot"></div><span>Salle climatisée</span></div>
+            <div class="commodite-item"><div class="commodite-dot"></div><span>Terrasse disponible</span></div>
+            <div class="commodite-item"><div class="commodite-dot"></div><span>Menus sur mesure sur demande</span></div>
+          </div>
+          <a href="contact.html" class="btn-ghost" style="display:inline-block; margin-top:2rem;">Nous contacter &rarr;</a>
+        </div>
+        <div class="reveal">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=80&auto=format" alt="Salle du restaurant" style="width:100%; aspect-ratio:4/3; object-fit:cover;" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-titre">Les Voiliers</div>
+        <div class="footer-brand-sous">Restaurant · Bar · Glacier</div>
+        <p class="footer-brand-desc">Spécialistes des produits de la mer et de la Méditerranée, installés sur les quais du port de Leucate.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="la-carte.html">La carte</a></li>
+          <li><a href="a-emporter.html">À emporter</a></li>
+          <li><a href="evenements.html">Formules</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Adresse</h4>
+        <p>Quai Éric Tabarly<br>Port Leucate<br>11370</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p><a href="tel:0468703952">04.68.70.39.52</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Restaurant Les Voiliers — Port Leucate</p>
+      <div class="footer-bottom-links">
+        <a href="#">Mentions légales</a>
+        <a href="#">Confidentialité</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('burger').addEventListener('click', () => document.getElementById('navMobile').classList.add('open'));
+    document.getElementById('navClose').addEventListener('click', () => document.getElementById('navMobile').classList.remove('open'));
+    function closeNav() { document.getElementById('navMobile').classList.remove('open'); }
+
+    const reveals = document.querySelectorAll('.reveal');
+    const obs = new IntersectionObserver(e => e.forEach(en => { if(en.isIntersecting) en.target.classList.add('visible'); }), {threshold:0.1});
+    reveals.forEach(el => obs.observe(el));
+  </script>
+</body>
+</html>
